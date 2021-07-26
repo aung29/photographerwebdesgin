@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* #F3D178 */
+/* #F5F1F1 */
+
+body{
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+    background:  #F5F1F1 ;
+}
+
+
+.logo{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: pink;
+    background : black;
+    color: #F3D178 ;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px;
+    margin-left: 10px;
+   
+
+}
+
+.brand{
+
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.container-fluid{
+    
+    background-image: url(https://www.shawacademy.com/assets/course-cards/website/wide/photography-1.png);
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover;
+      background-position: center;
+    
+}
+ul li{
+    position: relative;
+}
+
+ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+ul li:hover::after{
+    width: 100%;
+    transition: 0.5s ease-in;
+}
+
+.content{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+        
+}
+.title{
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.title-2{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+.container {
+
+    margin-top: 30px;
+}
+#profile{
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+    margin-left: 50px;
+    margin-right: 20px;
+  
+}
+
+.text{
+
+    font-size: 15px;
+    color: black;
+    
+}
+
+button {
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 3px solid #009688;
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    border: white;
+   
+}
+
+.fluid{
+    width: 0;
+    height: 100%;
+    background: #009688;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.1s ease;
+    
+
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+
+button:hover .fluid{
+    width: 100%;
+    
+}
+
+
+button:hover{
+    border: none;
+}
+
+
+.head{
+     position: relative;
+     margin-left: 50px;
+    
+}
+.line{
+    width: 10%;
+    height: 3px;
+    background-color: #F3D178 ;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    
+}
+
+
+.block{
+     margin: 50px;
+     width: 300px;
+     height: 300px;
+     position: relative;
+     box-shadow: 10px 10px 10px black;
+     border-radius: 15%;
+    cursor: pointer;
+    
+     
+     
+}
+
+.block a img{
+    opacity: 0.8;
+    border-radius: 15%;
+}
+
+.block:hover{
+     transform: scale(1.1);
+     background: blanchedalmond;
+}
+
+
+.block::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+
+
+
+.block img{
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+
+.cover{
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    box-shadow: 10px 10px 10px black;
+    
+   cursor: pointer;
+}
+
+.cover img{
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.cover:hover{
+    transform: scale(1.1);
+    background: blanchedalmond;
+}
+
+.header{
+    color: white;
+   
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 3;
+}
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url(../image/7.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title3{
+    font-family: 'Roboto',sans-serif;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%);
+    
+}
+
+
+.line2{
+    width: 100%;
+    height: 3px;
+    background-color: #F3D178  ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form-container{
+        width: 100%;
+        margin: 30px;
+        position: relative;
+}
+
+.container-contact{
+    width: 70%;
+    background: rgb(245,241,241,1);
+   
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    padding: 30px;
+    clear: both;
+    
+}
+input[type='text']{
+    
+     
+     border-top: none;
+     border-left: none;
+     border-right: none;
+    
+     
+}
+
+input[type='text']:focus{
+    outline: 0;
+}
+
+.btn-container{
+    text-align: center;
+}
+.btn.new{
+    background : #F3D178 ;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 16px;
+  
+    
+}
+
+
+
+.full{
+    padding-top: 50px;
+    text-align: center;
+   
+}
+
+.header1,.header2,.header3{
+
+        margin-top: 15px;
+        color: black;
+        font-weight: bold;
+}
+
+
